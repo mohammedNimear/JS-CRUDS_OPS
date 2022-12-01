@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-1-color : #909090;
+    --bg-2-color : #222;
+    --bg-3-color : #666;
+    --main-color : #4b0091;
+    --light-color : #ddd;
+    --light-color : #ddd;
+}
+
+body {
+    background-color: var(--bg-1-color);
+}
+
+body .container {
+    margin: 2rem auto;
+    width: 85%;
+}
+
+header {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+header > *{
+    margin: 0.5rem 0;
+}
+header > :nth-child(2){
+    text-transform: capitalize;
+    color: #4b0091;
+}
+
+input, button {
+    width: 100%;
+    height: 2.2rem;
+    font-size: 15px;
+    margin-bottom: 0.7rem;
+    border-radius: 0.33rem;
+    border: none;
+    outline: none;
+    padding: 0.33rem;
+    color: var(--light-color);
+    background-color: var(--bg-3-color);
+    transition: 0.3s;
+}
+
+input:focus {
+    transform: scale(1.05);
+    background-color: var(--bg-2-color);
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.price input {
+    width: 18%;
+    margin-right: rem;
+}
+
+small {
+    background-color: #950000;
+    color: var(--light-color);
+    padding: 0.7rem;
+    border-radius: 0.33rem;
+}
+
+small::before {
+    content: "Total : ";
+}
+
+button {
+    width: 100%;
+    border-radius: 0.8rem;
+    background-color: var(--main-color);
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    letter-spacing: 1px;
+}
+
+.search-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-btns > *{
+    width: 45%;
+}
+
+ table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: relative;
+}
+
+th, td {
+    text-transform: capitalize;
+    border: 1px solid var(--bg-2-color);
+    padding: 5px 10px;
+
+}
+th {
+    background-color: var(--bg-3-color);
+    color: var(--light-color);
+}
+
+table button {
+    width: 75%;
+    margin-top: 5px;
+  
+}
+
+table button:hover {
+    letter-spacing: 0px;
+}
+
+footer {
+   
+    justify-content:start;
+    display: flex;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    color: var(--light-color);
+    background-color: var(--bg-2-color);
+    width: 100%;
+    height: 6rem;
+    align-items: center;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 1rem 2rem;
+}
+
+footer span {
+    color: #f00808;
+
+}
